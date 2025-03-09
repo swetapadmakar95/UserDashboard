@@ -68,5 +68,6 @@
 
 **View the pie chart:**
 - The pie chart automatically updates to show the distribution of roles.
+  
 **Search (Optional):**
 - If you added a search input, type in a query to filter the table by Name, Email, or Role.
