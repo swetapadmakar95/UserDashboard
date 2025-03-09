@@ -1,0 +1,25 @@
+<div class="page-container">
+    <div class="addNewUserContainer">
+        <input type="search" [(ngModel)]="searchValue" placeholder="Search by name, email, or role..."/>
+        <button (click)="openUserForm()">Add User</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of (users$ | async) | userFilter: searchValue">
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.role }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="width: 50%; margin: auto;">
+        <app-chart [userRoles]="userRoles"></app-chart>
+    </div>
+</div>
