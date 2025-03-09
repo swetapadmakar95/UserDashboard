@@ -9,7 +9,7 @@
     - Form Validation for user input
 
 ## Overview
-    This project was created as part of a Senior Front-End Engineer assessment. The goal is to build a user dashboard with the ability to add new users via a lazy-loaded modal form and display a dynamic pie chart representing the distribution of user roles. The chart and table both update automatically when a new user is added.
+    The goal is to build a user dashboard with the ability to add new users via a lazy-loaded modal form and display a dynamic pie chart representing the distribution of user roles. The chart and table both update automatically when a new user is added.
 
 ## Features
 1. **Lazy Loading**
